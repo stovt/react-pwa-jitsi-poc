@@ -1,0 +1,28 @@
+{
+  "name": "react-pwa-jitsi-poc",
+  "private": true,
+  "version": "0.0.0",
+  "homepage": "https://stovt.github.io/react-pwa-jitsi-poc",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "start": "vite --host --open",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "pnpm run build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "@jitsi/react-sdk": "^1.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "gh-pages": "^4.0.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "vite-plugin-pwa": "^0.12.7"
+  }
+}

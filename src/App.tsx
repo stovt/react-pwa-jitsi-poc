@@ -1,5 +1,8 @@
 import { JaaSMeeting } from '@jitsi/react-sdk';
 
+const JAAS_MEETING_APP_ID = import.meta.env.VITE_JAAS_MEETING_APP_ID;
+const JAAS_MEETING_ROOM_NAME = 'React PWA Jitsi Proof of concept';
+
 const App: React.FC = (): React.ReactElement => {
   /*
   * Handlers
@@ -19,8 +22,8 @@ const App: React.FC = (): React.ReactElement => {
 
   return (
     <JaaSMeeting
-      appId={import.meta.env.VITE_JAAS_MEETING_APP_ID}
-      roomName='React PWA Jitsi Proof of concept'
+      appId={JAAS_MEETING_APP_ID}
+      roomName={JAAS_MEETING_ROOM_NAME}
       getIFrameRef={onGetJaaSMeetingIFrameRef}
       onReadyToClose={onJaaSMeetingReadyToClose}
     />

@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/react-pwa-jitsi-poc/sw.js', { scope: '/react-pwa-jitsi-poc/' })})}
